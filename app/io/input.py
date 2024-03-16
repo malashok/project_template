@@ -34,7 +34,7 @@ def input_from_file_pd(file_path):
 
     '''
     try:
-        res = pd.read_txt(file_path)
+        res = pd.read_csv(file_path)
         return res
     except FileNotFoundError:
         return FileNotFoundError
