@@ -31,7 +31,6 @@ def input_from_file_pd(file_path):
 
     Parameters:
         file_path: name of file
-
     '''
     try:
         res = pd.read_csv(file_path)
