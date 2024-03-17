@@ -22,7 +22,7 @@ def input_from_file(file_path):
             res = file.read()
             return res
     except FileNotFoundError:
-        return FileNotFoundError
+        raise FileNotFoundError
 
 
 def input_from_file_pd(file_path):
@@ -37,4 +37,4 @@ def input_from_file_pd(file_path):
         res = pd.read_csv(file_path)
         return res
     except FileNotFoundError:
-        return FileNotFoundError
+        raise FileNotFoundError
